@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
             from the comfort of your front room
           </p>
           <div className="flex gap-3">
-            <Link href="/app">
+            <Link href="/app/">
               <Button variant="primary" iconRight={<ArrowRight />}>
                 Get the app
               </Button>
