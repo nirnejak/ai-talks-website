@@ -53,64 +53,64 @@ const AnimatedComponent: React.FC = () => {
             cy="171"
             r="42"
             stroke="#FF00A8"
-            stroke-opacity="0.5"
-            stroke-width="1.5"
+            strokeOpacity="0.5"
+            strokeWidth="1.5"
           />
           <circle
             cx="237"
             cy="171"
             r="78"
             stroke="#FF00A8"
-            stroke-opacity="0.5"
-            stroke-width="1.5"
+            strokeOpacity="0.5"
+            strokeWidth="1.5"
           />
           <circle
             cx="237"
             cy="171"
             r="108"
             stroke="#FF00A8"
-            stroke-opacity="0.2"
-            stroke-width="1.5"
+            strokeOpacity="0.2"
+            strokeWidth="1.5"
           />
           <circle
             cx="237"
             cy="171"
             r="138"
             stroke="#FF00A8"
-            stroke-opacity="0.06"
-            stroke-width="1.5"
+            strokeOpacity="0.06"
+            strokeWidth="1.5"
           />
           <circle
             cx="237"
             cy="171"
             r="168"
             stroke="#FF00A8"
-            stroke-opacity="0.06"
-            stroke-width="1.5"
+            strokeOpacity="0.06"
+            strokeWidth="1.5"
           />
           <circle
             cx="237"
             cy="171"
             r="198"
             stroke="#FF00A8"
-            stroke-opacity="0.05"
-            stroke-width="1.5"
+            strokeOpacity="0.05"
+            strokeWidth="1.5"
           />
           <circle
             cx="237"
             cy="171"
             r="228"
             stroke="#FF00A8"
-            stroke-opacity="0.04"
-            stroke-width="1.5"
+            strokeOpacity="0.04"
+            strokeWidth="1.5"
           />
           <circle
             cx="237"
             cy="171"
             r="258"
             stroke="#FF00A8"
-            stroke-opacity="0.03"
-            stroke-width="1.5"
+            strokeOpacity="0.03"
+            strokeWidth="1.5"
           />
         </svg>
       </div>
@@ -137,14 +137,14 @@ const AnimatedComponent: React.FC = () => {
               height="80.3893"
               rx="40.1946"
               stroke="url(#paint1_radial_9_1061)"
-              stroke-width="3.61071"
+              strokeWidth="3.61071"
             />
             <path
               d="M42 24.5V59.5M24.5 42H59.5"
               stroke="white"
-              stroke-width="9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="9"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </g>
           <defs>
@@ -155,9 +155,9 @@ const AnimatedComponent: React.FC = () => {
               width="289.22"
               height="289.22"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feGaussianBlur in="BackgroundImageFix" stdDeviation="51.3049" />
               <feComposite
                 in2="SourceAlpha"
@@ -179,10 +179,10 @@ const AnimatedComponent: React.FC = () => {
               y2="141.416"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#663399" />
-              <stop offset="0.374725" stop-color="#FF00A8" />
-              <stop offset="0.654147" stop-color="#FF53F8" />
-              <stop offset="1" stop-color="#FF00A8" />
+              <stop stopColor="#663399" />
+              <stop offset="0.374725" stopColor="#FF00A8" />
+              <stop offset="0.654147" stopColor="#FF53F8" />
+              <stop offset="1" stopColor="#FF00A8" />
             </linearGradient>
             <radialGradient
               id="paint1_radial_9_1061"
@@ -192,8 +192,8 @@ const AnimatedComponent: React.FC = () => {
               gradientUnits="userSpaceOnUse"
               gradientTransform="translate(35.7924 5.4956) rotate(76.6875) scale(56.0718 57.7441)"
             >
-              <stop stop-color="white" />
-              <stop offset="1" stop-color="#EBDAFC" stop-opacity="0.1" />
+              <stop stopColor="white" />
+              <stop offset="1" stopColor="#EBDAFC" stopOpacity="0.1" />
             </radialGradient>
           </defs>
         </svg>
@@ -221,8 +221,8 @@ const AnimatedComponent: React.FC = () => {
               y2="548.65"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="white" />
-              <stop offset="0.891312" stop-color="white" stop-opacity="0" />
+              <stop stopColor="white" />
+              <stop offset="0.891312" stopColor="white" stopOpacity="0" />
             </linearGradient>
           </defs>
         </svg>
@@ -242,7 +242,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="-0.616951"
@@ -250,7 +250,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -258,7 +258,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -266,7 +266,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -274,7 +274,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -282,7 +282,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -290,7 +290,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -298,7 +298,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="126.171"
@@ -306,7 +306,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 126.171 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="-0.616951"
@@ -314,7 +314,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -322,7 +322,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -330,7 +330,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -338,7 +338,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="126.171"
@@ -346,7 +346,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 126.171 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="-0.616951"
@@ -354,7 +354,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -362,7 +362,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -370,7 +370,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -378,7 +378,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="126.171"
@@ -386,7 +386,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 126.171 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="-0.616951"
@@ -394,7 +394,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -402,7 +402,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -410,7 +410,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -418,7 +418,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="126.171"
@@ -426,7 +426,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 126.171 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="-0.616951"
@@ -434,7 +434,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -442,7 +442,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -450,7 +450,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -458,7 +458,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="126.171"
@@ -466,7 +466,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 126.171 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="-0.616951"
@@ -474,7 +474,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -482,7 +482,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -490,7 +490,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -498,7 +498,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="126.171"
@@ -506,7 +506,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 126.171 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="-0.616951"
@@ -514,7 +514,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -522,7 +522,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -530,7 +530,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -538,7 +538,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="126.171"
@@ -546,7 +546,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 126.171 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="-0.616951"
@@ -554,7 +554,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -562,7 +562,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -570,7 +570,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -578,7 +578,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="126.171"
@@ -586,7 +586,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 126.171 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="-0.616951"
@@ -594,7 +594,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -602,7 +602,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -610,7 +610,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -618,7 +618,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="126.171"
@@ -626,7 +626,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 126.171 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="-0.616951"
@@ -634,7 +634,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 -0.616951 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="31.0793"
@@ -642,7 +642,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 31.0793 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="62.7756"
@@ -650,7 +650,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 62.7756 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="94.4719"
@@ -658,7 +658,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 94.4719 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="126.171"
@@ -666,7 +666,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 126.171 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -674,7 +674,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 310.313)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -682,7 +682,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 340.313)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -690,7 +690,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -698,7 +698,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -706,7 +706,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -714,7 +714,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -722,7 +722,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -730,7 +730,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -738,7 +738,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -746,7 +746,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="316.029"
@@ -754,7 +754,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 316.029 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -762,7 +762,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -770,7 +770,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -778,7 +778,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -786,7 +786,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -794,7 +794,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="316.029"
@@ -802,7 +802,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 316.029 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -810,7 +810,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -818,7 +818,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -826,7 +826,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -834,7 +834,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -842,7 +842,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="316.029"
@@ -850,7 +850,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 316.029 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -858,7 +858,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -866,7 +866,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -874,7 +874,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -882,7 +882,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -890,7 +890,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="316.029"
@@ -898,7 +898,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 316.029 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -906,7 +906,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -914,7 +914,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -922,7 +922,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -930,7 +930,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -938,7 +938,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="316.029"
@@ -946,7 +946,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 316.029 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -954,7 +954,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -962,7 +962,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -970,7 +970,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -978,7 +978,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -986,7 +986,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="316.029"
@@ -994,7 +994,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 316.029 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -1002,7 +1002,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 104.124)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -1010,7 +1010,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -1018,7 +1018,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -1026,7 +1026,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -1034,7 +1034,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="316.029"
@@ -1042,7 +1042,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 316.029 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -1050,7 +1050,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -1058,7 +1058,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -1066,7 +1066,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -1074,7 +1074,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -1082,7 +1082,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="316.029"
@@ -1090,7 +1090,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 316.029 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -1098,7 +1098,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -1106,7 +1106,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -1114,7 +1114,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -1122,7 +1122,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -1130,7 +1130,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="316.029"
@@ -1138,7 +1138,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 316.029 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="157.545"
@@ -1146,7 +1146,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 157.545 1.1106)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="189.241"
@@ -1154,7 +1154,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 189.241 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="220.937"
@@ -1162,7 +1162,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 220.937 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="252.634"
@@ -1170,7 +1170,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 252.634 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="284.33"
@@ -1178,7 +1178,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 284.33 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="316.029"
@@ -1186,7 +1186,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 316.029 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1194,7 +1194,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 310.313)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1202,7 +1202,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 340.313)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.1"
@@ -1210,7 +1210,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.1 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.099"
@@ -1218,7 +1218,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.099 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.797"
@@ -1226,7 +1226,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.797 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.795"
@@ -1234,7 +1234,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.795 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.493"
@@ -1242,7 +1242,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.493 310.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.491"
@@ -1250,7 +1250,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.491 340.152)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1258,7 +1258,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.1"
@@ -1266,7 +1266,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.1 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.797"
@@ -1274,7 +1274,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.797 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.493"
@@ -1282,7 +1282,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.493 275.813)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1290,7 +1290,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.1"
@@ -1298,7 +1298,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.1 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.797"
@@ -1306,7 +1306,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.797 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.493"
@@ -1314,7 +1314,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.493 241.474)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1322,7 +1322,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.1"
@@ -1330,7 +1330,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.1 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.797"
@@ -1338,7 +1338,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.797 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.493"
@@ -1346,7 +1346,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.493 207.138)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1354,7 +1354,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.1"
@@ -1362,7 +1362,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.1 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.797"
@@ -1370,7 +1370,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.797 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.493"
@@ -1378,7 +1378,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.493 172.799)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1386,7 +1386,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.1"
@@ -1394,7 +1394,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.1 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.797"
@@ -1402,7 +1402,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.797 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.493"
@@ -1410,7 +1410,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.493 138.463)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1418,7 +1418,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 104.124)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.1"
@@ -1426,7 +1426,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.1 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.797"
@@ -1434,7 +1434,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.797 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.493"
@@ -1442,7 +1442,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.493 104.121)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1450,7 +1450,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.1"
@@ -1458,7 +1458,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.1 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.797"
@@ -1466,7 +1466,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.797 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.493"
@@ -1474,7 +1474,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.493 69.7854)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1482,7 +1482,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.1"
@@ -1490,7 +1490,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.1 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.797"
@@ -1498,7 +1498,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.797 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.493"
@@ -1506,7 +1506,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.493 35.4465)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="347.403"
@@ -1514,7 +1514,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 347.403 1.1106)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="379.1"
@@ -1522,7 +1522,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 379.1 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="410.797"
@@ -1530,7 +1530,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 410.797 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
           <circle
             cx="442.493"
@@ -1538,7 +1538,7 @@ const AnimatedComponent: React.FC = () => {
             r="0.68676"
             transform="rotate(-90 442.493 1.10767)"
             fill="white"
-            fill-opacity="0.3"
+            fillOpacity="0.3"
           />
         </svg>
       </div>

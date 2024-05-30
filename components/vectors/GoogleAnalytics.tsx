@@ -17,7 +17,7 @@ const GoogleAnalytics: React.FC = () => {
         height="60"
         rx="30"
         fill="white"
-        fill-opacity="0.04"
+        fillOpacity="0.04"
       />
       <rect
         x="1.5"
@@ -26,7 +26,7 @@ const GoogleAnalytics: React.FC = () => {
         height="60"
         rx="30"
         stroke="#190E26"
-        stroke-width="1.5"
+        strokeWidth="1.5"
       />
       <rect
         x="1.5"
@@ -35,8 +35,8 @@ const GoogleAnalytics: React.FC = () => {
         height="60"
         rx="30"
         stroke="url(#paint0_linear_9_1077)"
-        stroke-opacity="0.1"
-        stroke-width="1.5"
+        strokeOpacity="0.1"
+        strokeWidth="1.5"
       />
       <path
         d="M18.8438 41.125C18.8438 39.261 20.3548 37.75 22.2188 37.75C24.0827 37.75 25.5938 39.261 25.5938 41.125C25.5938 42.989 24.0827 44.5 22.2188 44.5C20.3548 44.5 18.8438 42.989 18.8438 41.125Z"
@@ -59,8 +59,8 @@ const GoogleAnalytics: React.FC = () => {
           y2="61"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

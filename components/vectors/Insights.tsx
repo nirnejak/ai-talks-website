@@ -24,7 +24,7 @@ const Insights: React.FC = () => {
         height="60"
         rx="30"
         fill="white"
-        fill-opacity="0.08"
+        fillOpacity="0.08"
       />
       <rect
         x="1.02002"
@@ -33,10 +33,10 @@ const Insights: React.FC = () => {
         height="60"
         rx="30"
         stroke="url(#paint0_linear_9_1080)"
-        stroke-opacity="0.1"
-        stroke-width="1.5"
+        strokeOpacity="0.1"
+        strokeWidth="1.5"
       />
-      <g clip-path="url(#clip0_9_1080)">
+      <g clipPath="url(#clip0_9_1080)">
         <path
           d="M26.4883 12.9795L22.6205 16.8347L26.4883 20.6899L30.3561 16.8347L26.4883 12.9795Z"
           fill="white"
@@ -52,7 +52,7 @@ const Insights: React.FC = () => {
         <path
           d="M26.8961 41.7439L30.3148 45.1515L26.4537 49L22.5925 45.1515L26.0515 41.7439V39.0178L23.0349 36.0513H20.2999L16.8812 39.4588L13.02 35.6103L16.8812 31.7617L20.2999 35.1693H23.0349L26.4537 31.7617L30.3148 35.6103L26.8961 39.0178V41.7439Z"
           fill="url(#paint1_linear_9_1080)"
-          fill-opacity="0.4"
+          fillOpacity="0.4"
         />
         <path
           d="M36.0599 41.2979L32.1921 45.1531L36.0599 49.0083L39.9277 45.1531L36.0599 41.2979Z"
@@ -88,8 +88,8 @@ const Insights: React.FC = () => {
           y2="61"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0.83" />
-          <stop offset="1" stop-color="white" stop-opacity="0.79" />
+          <stop stopColor="white" stopOpacity="0.83" />
+          <stop offset="1" stopColor="white" stopOpacity="0.79" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_9_1080"
@@ -99,8 +99,8 @@ const Insights: React.FC = () => {
           y2="49"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0.32" />
-          <stop offset="1" stop-color="white" stop-opacity="0.32" />
+          <stop stopColor="white" stopOpacity="0.32" />
+          <stop offset="1" stopColor="white" stopOpacity="0.32" />
         </linearGradient>
         <clipPath id="clip0_9_1080">
           <rect
