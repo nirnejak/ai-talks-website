@@ -1,5 +1,10 @@
 import * as React from "react"
 
+import GoogleAnalytics from "./vectors/GoogleAnalytics"
+import HubSpot from "./vectors/HubSpot"
+import Insights from "./vectors/Insights"
+import Vimeo from "./vectors/Vimeo"
+
 const AnimatedComponent: React.FC = () => {
   return (
     <>
@@ -13,6 +18,26 @@ const AnimatedComponent: React.FC = () => {
         >
           <rect width="572" height="508" fill="#180020" />
         </svg>
+      </div>
+      <div className="absolute left-1/2 top-1/2 z-40 animate-orbit">
+        <div className="absolute -left-36 top-20 animate-rotate">
+          <HubSpot />
+        </div>
+      </div>
+      <div className="absolute left-1/2 top-1/2 z-40 animate-orbit">
+        <div className="absolute -top-40 left-20 animate-rotate">
+          <GoogleAnalytics />
+        </div>
+      </div>
+      <div className="absolute left-1/2 top-1/2 z-40 animate-orbit">
+        <div className="absolute -left-40 -top-40 animate-rotate">
+          <Vimeo />
+        </div>
+      </div>
+      <div className="absolute left-1/2 top-1/2 z-40 animate-orbit">
+        <div className="absolute left-20 top-20 animate-rotate">
+          <Insights />
+        </div>
       </div>
       {/* Rings */}
       <div className="absolute left-1/2 top-1/2 z-30 -translate-x-1/2 -translate-y-1/2">

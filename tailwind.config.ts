@@ -66,6 +66,22 @@ const config: Config = {
           "90%": { transform: "translate(1px, 2px) rotate(0deg)" },
           "100%": { transform: "translate(1px, -2px) rotate(-1deg)" },
         },
+        orbit: {
+          from: { rotate: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
+        "orbit-reverse": {
+          from: { rotate: "rotate(0deg)" },
+          to: { transform: "rotate(-360deg)" },
+        },
+        rotate: {
+          from: { rotate: "rotate(0deg)" },
+          to: { transform: "rotate(-360deg)" },
+        },
+        "rotate-reverse": {
+          from: { rotate: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         slideDownAndFade:
@@ -83,6 +99,10 @@ const config: Config = {
         scale: "scale 150ms cubic-bezier(0.4, 0, 0.2, 1)",
         rise: "rise 150ms cubic-bezier(0.4, 0, 0.2, 1)",
         shake: "shake 150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        orbit: "orbit 15s linear infinite",
+        "orbit-reverse": "orbit-reverse 15s linear infinite",
+        rotate: "rotate 15s linear infinite",
+        "rotate-reverse": "rotate-reverse 15s linear infinite",
       },
     },
     fontFamily: {
