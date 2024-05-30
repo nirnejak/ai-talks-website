@@ -2,21 +2,22 @@ import * as React from "react"
 
 import { type Metadata } from "next"
 
+import Footer from "@/components/sections/Footer"
+import HeroSection from "@/components/sections/HeroSection"
 import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/",
-  title: "Next.js App",
-  description: "Next.js Typescript Starter",
+  title: "AI Talks",
+  description: "Top insights from AI talks ",
 })
 
 const Home: React.FC = () => {
   return (
-    <main className="grid h-screen place-content-center">
-      <h1 className="text-center font-heading text-2xl font-medium text-zinc-300">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-    </main>
+    <>
+      <HeroSection />
+      <Footer />
+    </>
   )
 }
 
