@@ -87,6 +87,7 @@ const config: Config = {
     },
     fontFamily: {
       sans: ["var(--sans-font)"],
+      heading: ["var(--font-clash-display)"],
     },
   },
   variants: {
