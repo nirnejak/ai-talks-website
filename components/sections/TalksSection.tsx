@@ -1,46 +1,73 @@
+"use client"
 import * as React from "react"
+
+import Image from "next/image"
+import Link from "next/link"
 
 import Button from "../atoms/Button"
 import Container from "../atoms/Container"
-import TalkCard from "../atoms/TalkCard"
+import Tabs from "../atoms/Tabs"
+import ArrowRight from "../vectors/ArrowRight"
+import talks from "utils/talks"
 
-const talks = [
-  {
-    title: "AI Revolution: Shaping the Future Together",
-    subtitle:
-      "Join us for an inspiring discussion on the AI Revolution and its collaborative impact on shaping a shared future.",
-    imageUrl: "/card-1.png",
-  },
-  {
-    title: "AI Revolution: Shaping Tomorrow's World",
-    subtitle:
-      "Join us for an inspiring discussion on the AI Revolution and its collaborative impact on shaping a shared future.",
-    imageUrl: "/card-1.png",
-  },
-  {
-    title: "AI Transformation: Building a Future of Innovation",
-    subtitle:
-      "Discover how AI is driving innovation and shaping the future. Join us in exploring the transformative power of AI.",
-    imageUrl: "/card-1.png",
-  },
-]
+const cities = ["London", "Singapore", "Los Angeles"]
 
 const TalksSection: React.FC = () => {
+  const [activeTab, setActiveTab] = React.useState(0)
+
+  const filteredTalks = React.useMemo(() => {
+    const city = cities[activeTab]
+    return talks.filter((talk) => talk.city === city)
+  }, [activeTab])
+
   return (
-    <section>
+    <section className="py-20">
       <Container>
-        <h2 className="font-heading">Find more talks</h2>
-        <div className="flex gap-3">
-          <div>London</div>
-          <div>Singapore</div>
-          <div>Los Angeles</div>
-        </div>
-        <div className="grid grid-cols-3 gap-10">
-          {talks.map((talk, index) => (
-            <TalkCard key={index} {...talk} />
+        <h2 className="mb-8 font-heading text-4xl font-semibold">
+          Find more talks
+        </h2>
+        <Tabs
+          tabsOptions={cities}
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          className="mb-10"
+        />
+        <div className="mb-10 grid grid-cols-3 gap-10">
+          {filteredTalks.map((talk, index) => (
+            <div key={index}>
+              <div className="relative mb-6 flex min-h-[368px] overflow-hidden rounded-xl">
+                <Image
+                  src={talk.imageUrl}
+                  alt={talk.title}
+                  placeholder="blur"
+                  className="absolute inset-0 z-0"
+                />
+                <div
+                  className="absolute z-10 min-h-[368px] w-full"
+                  style={{
+                    background: `radial-gradient(100% 100% at 0% 0%, #180020 0%, rgba(26, 0, 35, 20%) 100%)`,
+                  }}
+                />
+                <div className="relative z-20 mt-auto p-6">
+                  <h3
+                    className="line-clamp-3 font-heading text-2xl font-semibold leading-7 text-slate-50"
+                    style={{ textShadow: "0px 4px 4px #00000080" }}
+                  >
+                    {talk.title}
+                  </h3>
+                </div>
+              </div>
+              <p className="line-clamp-4 text-base tracking-tight">
+                {talk.subtitle}
+              </p>
+            </div>
           ))}
         </div>
-        <Button variant="secondary">Listen to more</Button>
+        <Link href="/app/">
+          <Button variant="dark" isOutline iconRight={<ArrowRight />}>
+            Listen to more
+          </Button>
+        </Link>
       </Container>
     </section>
   )
