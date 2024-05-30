@@ -5,7 +5,3 @@
 * {
   -webkit-font-smoothing: antialiased;
 }
-
-html {
-  @apply font-sans text-base;
-}

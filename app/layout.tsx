@@ -41,7 +41,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
         className={classNames(
           sansFont.variable,
           clashDisplay.variable,
-          "overflow-x-hidden font-sans"
+          "overflow-x-hidden font-sans text-base"
         )}
       >
         {children}
