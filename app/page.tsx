@@ -11,7 +11,7 @@ import generateMetadata from "utils/seo"
 export const metadata: Metadata = generateMetadata({
   path: "/",
   title: "AI Talks",
-  description: "Top insights from AI talks ",
+  description: "Top insights from AI talks",
 })
 
 const Home: React.FC = () => {
