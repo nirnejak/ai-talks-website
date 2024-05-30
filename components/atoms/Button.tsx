@@ -23,18 +23,30 @@ const Button: React.FC<Props> = ({
   const buttonClass = React.useMemo(() => {
     switch (variant) {
       case "primary":
-        return `border-purple-500 ${isOutline ? "text-purple-500" : "text-white bg-purple-500"}`
+        if (isOutline) {
+          return "border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white focus:bg-purple-500 focu:text-white"
+        } else {
+          return "border-purple-500 text-white bg-purple-500 hover:bg-purple-600 hover:border-purple-600 focus:bg-purple-600 focus:border-purple-600"
+        }
       case "light":
-        return `border-white ${isOutline ? "text-white" : "bg-white text-slate-900"}`
+        if (isOutline) {
+          return "border-white text-white hover:bg-white hover:text-slate-900 focus:bg-white focus:text-slate-900"
+        } else {
+          return "border-white bg-white text-slate-900 hover:bg-slate-200 hover:border-slate-200 focus:bg-slate-200 focus:border-slate-200"
+        }
       case "dark":
-        return `border-slate-900 text-slate-900 ${isOutline ? "text-slate-900" : "bg-slate-900 text-white"}`
+        if (isOutline) {
+          return "border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white focus:bg-slate-900 focus:text-white"
+        } else {
+          return "border-slate-900 bg-slate-900 text-white hover:border-slate-800 hover:bg-slate-800 focus:border-slate-800 focus:bg-slate-800"
+        }
     }
   }, [variant, isOutline])
 
   return (
     <button
       className={classNames(
-        "rounded-full px-9 py-2.5 font-semibold text-base flex items-center gap-2 border-2 transition-all active:scale-95",
+        "rounded-full px-9 py-2.5 font-semibold text-base flex items-center gap-2 border-2 transition-all active:scale-95 focus:outline-none",
         buttonClass,
         className
       )}
