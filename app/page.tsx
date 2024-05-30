@@ -4,6 +4,8 @@ import { type Metadata } from "next"
 
 import Footer from "@/components/sections/Footer"
 import HeroSection from "@/components/sections/HeroSection"
+import JoinSection from "@/components/sections/JoinSection"
+import TalksSection from "@/components/sections/TalksSection"
 import generateMetadata from "utils/seo"
 
 export const metadata: Metadata = generateMetadata({
@@ -16,6 +18,8 @@ const Home: React.FC = () => {
   return (
     <>
       <HeroSection />
+      <TalksSection />
+      <JoinSection />
       <Footer />
     </>
   )
