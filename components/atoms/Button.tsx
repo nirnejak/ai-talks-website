@@ -4,33 +4,38 @@ import classNames from "@/utils/classNames"
 
 interface Props {
   children: React.ReactNode
-  variant?: "primary" | "secondary"
+  variant?: "primary" | "secondary" | "tertiary"
   className?: string
+  iconRight?: React.ReactNode
 }
 
 const Button: React.FC<Props> = ({
   variant = "primary",
   children,
+  iconRight,
   className,
 }) => {
   const buttonClass = React.useMemo(() => {
     switch (variant) {
       case "primary":
-        return "text-white bg-purple-500"
+        return "border-purple-500 text-white bg-purple-500"
       case "secondary":
-        return "border-spacing-1 border-white text-white border-solid"
+        return "border-white text-white bg-transparent"
+      case "tertiary":
+        return "border-white text-slate-900 bg-white"
     }
   }, [variant])
 
   return (
     <button
       className={classNames(
-        "rounded-full px-7 py-3 font-bold text-base",
+        "rounded-full px-9 py-2.5 font-semibold text-base flex items-center gap-2 border-2",
         buttonClass,
         className
       )}
     >
-      {children}
+      <span>{children}</span>
+      <span>{iconRight}</span>
     </button>
   )
 }
