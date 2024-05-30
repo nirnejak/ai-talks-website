@@ -5,34 +5,12 @@ import classNames from "utils/classNames"
 interface Props {
   children: React.ReactNode
   className?: string
-  size?: "narrow" | "normal" | "wide" | "ultrawide"
 }
 
-const Container: React.FC<Props> = ({
-  children,
-  className,
-  size = "wide",
-  ...restProps
-}) => {
-  let widthClass = ""
-  switch (size) {
-    case "narrow":
-      widthClass = "max-w-[480px]"
-      break
-    case "wide":
-      widthClass = "max-w-[980px]"
-      break
-    case "ultrawide":
-      widthClass = "max-w-[1200px]"
-      break
-    case "normal":
-    default:
-      widthClass = "max-w-[680px]"
-  }
-
+const Container: React.FC<Props> = ({ children, className, ...restProps }) => {
   return (
     <div
-      className={classNames("mx-auto px-4 md:px-0", widthClass, className)}
+      className={classNames("mx-auto px-4 md:px-0 max-w-[1184px]", className)}
       {...restProps}
     >
       {children}
