@@ -1,3 +1,4 @@
+"use client"
 import * as React from "react"
 
 import classNames from "@/utils/classNames"
@@ -7,6 +8,7 @@ interface Props {
   variant?: "primary" | "secondary" | "tertiary"
   className?: string
   iconRight?: React.ReactNode
+  onClick?: () => void
 }
 
 const Button: React.FC<Props> = ({
@@ -14,6 +16,7 @@ const Button: React.FC<Props> = ({
   children,
   iconRight,
   className,
+  onClick,
 }) => {
   const buttonClass = React.useMemo(() => {
     switch (variant) {
@@ -33,6 +36,7 @@ const Button: React.FC<Props> = ({
         buttonClass,
         className
       )}
+      onClick={onClick}
     >
       <span>{children}</span>
       <span>{iconRight}</span>
