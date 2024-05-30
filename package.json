@@ -13,16 +13,13 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.40.0",
-    "akar-icons": "^1.9.31",
     "dotenv": "^16.4.5",
     "framer-motion": "^11.2.6",
     "next": "^14.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-intersection-observer": "^9.10.2",
-    "sharp": "^0.33.4",
-    "use-sound": "^4.0.1"
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
