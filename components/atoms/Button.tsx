@@ -5,7 +5,8 @@ import classNames from "@/utils/classNames"
 
 interface Props {
   children: React.ReactNode
-  variant?: "primary" | "secondary" | "tertiary"
+  variant?: "primary" | "light" | "dark"
+  isOutline?: boolean
   className?: string
   iconRight?: React.ReactNode
   onClick?: () => void
@@ -13,6 +14,7 @@ interface Props {
 
 const Button: React.FC<Props> = ({
   variant = "primary",
+  isOutline = false,
   children,
   iconRight,
   className,
@@ -21,13 +23,13 @@ const Button: React.FC<Props> = ({
   const buttonClass = React.useMemo(() => {
     switch (variant) {
       case "primary":
-        return "border-purple-500 text-white bg-purple-500"
-      case "secondary":
-        return "border-white text-white bg-transparent"
-      case "tertiary":
-        return "border-white text-slate-900 bg-white"
+        return `border-purple-500 ${isOutline ? "text-purple-500" : "text-white bg-purple-500"}`
+      case "light":
+        return `border-white ${isOutline ? "text-white" : "bg-white text-slate-900"}`
+      case "dark":
+        return `border-slate-900 text-slate-900 ${isOutline ? "text-slate-900" : "bg-slate-900 text-white"}`
     }
-  }, [variant])
+  }, [variant, isOutline])
 
   return (
     <button
