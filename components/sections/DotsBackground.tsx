@@ -2,13 +2,7 @@ import * as React from "react"
 
 const DotsBackground: React.FC = () => {
   return (
-    <svg
-      width="473"
-      height="340"
-      viewBox="0 0 473 340"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 473 340" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle
         cx="-0.616951"
         cy="310.152"

@@ -32,7 +32,7 @@ const TalksSection: React.FC = () => {
           setActiveTab={setActiveTab}
           className="mb-10"
         />
-        <div className="mb-10 grid grid-cols-1 gap-10 lg:grid-cols-3">
+        <div className="mb-10 grid grid-cols-1 gap-10 md:grid-cols-3">
           {filteredTalks.map((talk, index) => (
             <div key={index}>
               <div className="relative mb-6 flex min-h-[368px] cursor-pointer overflow-hidden rounded-xl">

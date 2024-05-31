@@ -13,10 +13,10 @@ const AnimatedComponent: React.FC = () => {
   return (
     <div className="relative order-2 flex w-full items-center justify-center overflow-hidden rounded-3xl md:order-1">
       <div className="relative z-10 h-[430px] w-full bg-[#180020] lg:h-[508px]" />
-      <div className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute left-1/2 top-1/2 z-20 size-full -translate-x-1/2 -translate-y-1/2">
         <GridBackground />
       </div>
-      <div className="absolute left-1/2 top-1/2 z-20 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute left-1/2 top-1/2 z-20 size-4/5 -translate-x-1/2 -translate-y-1/2">
         <DotsBackground />
       </div>
       <div className="absolute left-1/2 top-1/2 z-30 -translate-x-1/2 -translate-y-1/2">
