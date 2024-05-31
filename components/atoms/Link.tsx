@@ -1,9 +1,14 @@
 "use client"
 import * as React from "react"
 
+import Link from "next/link"
+
 import classNames from "@/utils/classNames"
 
 interface Props {
+  href?: string
+  target?: string
+  rel?: string
   children: React.ReactNode
   variant?: "primary" | "light" | "dark"
   isOutline?: boolean
@@ -12,15 +17,18 @@ interface Props {
   onClick?: () => void
 }
 
-const Button: React.FC<Props> = ({
+const CustomLink: React.FC<Props> = ({
+  href = null,
+  target,
+  rel,
+  children,
   variant = "primary",
   isOutline = false,
-  children,
-  iconRight,
   className,
+  iconRight,
   onClick,
 }) => {
-  const buttonClass = React.useMemo(() => {
+  const linkClass = React.useMemo(() => {
     switch (variant) {
       case "primary":
         if (isOutline) {
@@ -43,19 +51,46 @@ const Button: React.FC<Props> = ({
     }
   }, [variant, isOutline])
 
-  return (
-    <button
-      className={classNames(
-        "rounded-full px-7 md:px-9 py-1.5 md:py-2.5 font-semibold text-sm md:text-base flex items-center gap-2 border-2 transition-all active:scale-95 focus:outline-none",
-        buttonClass,
-        className
-      )}
-      onClick={onClick}
-    >
-      <span>{children}</span>
-      <span>{iconRight}</span>
-    </button>
+  const linkClassName = classNames(
+    "rounded-full px-7 md:px-9 py-1.5 md:py-2.5 font-semibold text-sm md:text-base flex items-center gap-2 border-2 transition-all active:scale-95 focus:outline-none",
+    linkClass,
+    className
   )
+
+  if (typeof href === "string") {
+    if (
+      href.includes("http") ||
+      href.includes("mailto") ||
+      href.includes("tel")
+    ) {
+      return (
+        <a
+          className={linkClassName}
+          href={href}
+          target={target}
+          rel={rel}
+          onClick={onClick}
+        >
+          <span>{children}</span>
+          <span>{iconRight}</span>
+        </a>
+      )
+    } else {
+      return (
+        <Link className={linkClassName} href={href} onClick={onClick}>
+          <span>{children}</span>
+          <span>{iconRight}</span>
+        </Link>
+      )
+    }
+  } else {
+    return (
+      <button className={linkClassName} onClick={onClick}>
+        <span>{children}</span>
+        <span>{iconRight}</span>
+      </button>
+    )
+  }
 }
 
-export default Button
+export default CustomLink

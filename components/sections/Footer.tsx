@@ -4,8 +4,8 @@ import { useInView } from "react-intersection-observer"
 
 import { motion, useAnimation } from "framer-motion"
 
-import Button from "../atoms/Button"
 import Container from "../atoms/Container"
+import Link from "../atoms/Link"
 import ArrowRight from "../vectors/ArrowRight"
 import FooterBackground from "../vectors/FooterBackground"
 
@@ -53,19 +53,22 @@ const Footer: React.FC = () => {
           insights on AI{"'"}s role in shaping the future. Let{"'"}s make an
           impact together!
         </motion.p>
-        <motion.a
+        <motion.div
           initial={"hidden"}
           animate={controls}
           variants={variants}
           transition={{ duration: 1, delay: 0.6, type: "spring" }}
-          href="https://example.com/"
-          target="_blank"
-          rel="noreferrer"
         >
-          <Button variant="light" iconRight={<ArrowRight />}>
+          <Link
+            href="https://example.com/"
+            target="_blank"
+            rel="noreferrer"
+            variant="light"
+            iconRight={<ArrowRight />}
+          >
             Speak at our event
-          </Button>
-        </motion.a>
+          </Link>
+        </motion.div>
       </Container>
     </footer>
   )

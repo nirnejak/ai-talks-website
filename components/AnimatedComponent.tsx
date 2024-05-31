@@ -1,12 +1,12 @@
 import * as React from "react"
 
-import DotsBackground from "./sections/DotsBackground"
-import GridBackground from "./sections/GridBackground"
-import PlusIcon from "./sections/PlusIcon"
-import Rings from "./sections/Rings"
+import DotsBackground from "./vectors/DotsBackground"
 import GoogleAnalytics from "./vectors/GoogleAnalytics"
+import GridBackground from "./vectors/GridBackground"
 import HubSpot from "./vectors/HubSpot"
 import Insights from "./vectors/Insights"
+import PlusIcon from "./vectors/PlusIcon"
+import Rings from "./vectors/Rings"
 import Vimeo from "./vectors/Vimeo"
 
 const AnimatedComponent: React.FC = () => {

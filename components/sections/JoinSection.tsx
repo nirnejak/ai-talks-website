@@ -3,11 +3,10 @@ import * as React from "react"
 import { useInView } from "react-intersection-observer"
 
 import { motion, useAnimation } from "framer-motion"
-import Link from "next/link"
 
 import AnimatedComponent from "../AnimatedComponent"
-import Button from "../atoms/Button"
 import Container from "../atoms/Container"
+import Link from "../atoms/Link"
 import ArrowRight from "../vectors/ArrowRight"
 
 const JoinSection: React.FC = () => {
@@ -54,15 +53,19 @@ const JoinSection: React.FC = () => {
               artificial intelligence.
             </motion.p>
             <motion.div
+              className="flex"
               initial={"hidden"}
               animate={controls}
               variants={variants}
               transition={{ duration: 1, delay: 0.9, type: "spring" }}
             >
-              <Link href="/app/">
-                <Button variant="dark" isOutline iconRight={<ArrowRight />}>
-                  Join now
-                </Button>
+              <Link
+                href="/app/"
+                variant="dark"
+                isOutline
+                iconRight={<ArrowRight />}
+              >
+                Join now
               </Link>
             </motion.div>
           </div>

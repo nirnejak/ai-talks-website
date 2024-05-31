@@ -4,10 +4,9 @@ import { useInView } from "react-intersection-observer"
 
 import { motion, useAnimation } from "framer-motion"
 import Image from "next/image"
-import Link from "next/link"
 
-import Button from "../atoms/Button"
 import Container from "../atoms/Container"
+import Link from "../atoms/Link"
 import Tabs from "../atoms/Tabs"
 import ArrowRight from "../vectors/ArrowRight"
 import talks from "utils/talks"
@@ -116,11 +115,15 @@ const TalksSection: React.FC = () => {
           animate={controls}
           variants={variants}
           transition={{ duration: 1, delay: 1, type: "spring" }}
+          className="flex"
         >
-          <Link href="/app/">
-            <Button variant="dark" isOutline iconRight={<ArrowRight />}>
-              Listen to more
-            </Button>
+          <Link
+            href="/app/"
+            variant="dark"
+            isOutline
+            iconRight={<ArrowRight />}
+          >
+            Listen to more
           </Link>
         </motion.div>
       </Container>

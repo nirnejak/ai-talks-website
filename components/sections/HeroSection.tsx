@@ -3,10 +3,9 @@ import * as React from "react"
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import Link from "next/link"
 
-import Button from "../atoms/Button"
 import Container from "../atoms/Container"
+import Link from "../atoms/Link"
 import ArrowRight from "../vectors/ArrowRight"
 import HeroImage from "assets/hero.png"
 
@@ -49,23 +48,19 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 1, delay: 0.6, type: "spring" }}
             className="flex gap-3 sm:flex-row"
           >
-            <Link href="/app/">
-              <Button variant="primary" iconRight={<ArrowRight />}>
-                Get the app
-              </Button>
+            <Link href="/app/" variant="primary" iconRight={<ArrowRight />}>
+              Get the app
             </Link>
-            <div>
-              <Button
-                variant="light"
-                isOutline
-                iconRight={<ArrowRight />}
-                onClick={() => {
-                  scrollToFooter()
-                }}
-              >
-                Join a talk
-              </Button>
-            </div>
+            <Link
+              variant="light"
+              isOutline
+              iconRight={<ArrowRight />}
+              onClick={() => {
+                scrollToFooter()
+              }}
+            >
+              Join a talk
+            </Link>
           </motion.div>
         </div>
       </Container>
