@@ -12,10 +12,10 @@ const Footer: React.FC = () => {
         <FooterBackground />
       </div>
       <Container className="relative z-10 flex flex-col items-center">
-        <h2 className="mb-8 max-w-[500px] font-heading text-6xl font-semibold">
+        <h2 className="mb-8 max-w-[500px] font-heading text-5xl font-semibold md:text-6xl">
           Want to talk at our event?
         </h2>
-        <p className="mb-10 max-w-[470px] text-xl tracking-tight">
+        <p className="mb-10 max-w-[470px] text-lg tracking-tight md:text-xl">
           Excited to have you speak at our event! Share your expertise and
           insights on AI{"'"}s role in shaping the future. Let{"'"}s make an
           impact together!
