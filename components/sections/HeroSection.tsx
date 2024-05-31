@@ -1,6 +1,7 @@
 "use client"
 import * as React from "react"
 
+import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -25,14 +26,29 @@ const HeroSection: React.FC = () => {
       />
       <Container className="relative z-10">
         <div className="max-w-[470px]">
-          <h1 className="mb-8 font-heading text-5xl font-semibold md:text-6xl">
+          <motion.h1
+            initial={{ opacity: 0, translateY: 10 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 1, type: "spring" }}
+            className="mb-8 font-heading text-5xl font-semibold md:text-6xl"
+          >
             Top insights from AI talks
-          </h1>
-          <p className="mb-10 text-lg tracking-tight md:text-xl">
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, translateY: 10 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 1, delay: 0.3, type: "spring" }}
+            className="mb-10 text-lg tracking-tight md:text-xl"
+          >
             Get informed about the latest talks in artificial intelligence, all
             from the comfort of your front room
-          </p>
-          <div className="flex gap-3 sm:flex-row">
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, translateY: 10 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 1, delay: 0.6, type: "spring" }}
+            className="flex gap-3 sm:flex-row"
+          >
             <Link href="/app/">
               <Button variant="primary" iconRight={<ArrowRight />}>
                 Get the app
@@ -50,7 +66,7 @@ const HeroSection: React.FC = () => {
                 Join a talk
               </Button>
             </div>
-          </div>
+          </motion.div>
         </div>
       </Container>
     </header>
