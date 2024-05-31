@@ -2,13 +2,7 @@ import * as React from "react"
 
 const PlusIcon: React.FC = () => {
   return (
-    <svg
-      width="84"
-      height="84"
-      viewBox="0 0 84 84"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_b_9_1061)">
         <rect
           width="84"

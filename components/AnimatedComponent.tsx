@@ -22,7 +22,7 @@ const AnimatedComponent: React.FC = () => {
       <div className="absolute left-1/2 top-1/2 z-30 -translate-x-1/2 -translate-y-1/2">
         <Rings />
       </div>
-      <div className="absolute left-1/2 top-1/2 z-30 -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute left-1/2 top-1/2 z-30 w-[15%] -translate-x-1/2 -translate-y-1/2">
         <PlusIcon />
       </div>
       <div className="absolute left-1/2 top-1/2 z-40 animate-orbit">
