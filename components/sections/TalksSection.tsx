@@ -32,15 +32,15 @@ const TalksSection: React.FC = () => {
           setActiveTab={setActiveTab}
           className="mb-10"
         />
-        <div className="mb-10 grid grid-cols-3 gap-10">
+        <div className="mb-10 grid grid-cols-1 gap-10 lg:grid-cols-3">
           {filteredTalks.map((talk, index) => (
             <div key={index}>
-              <div className="relative mb-6 flex min-h-[368px] overflow-hidden rounded-xl">
+              <div className="relative mb-6 flex min-h-[368px] cursor-pointer overflow-hidden rounded-xl">
                 <Image
                   src={talk.imageUrl}
                   alt={talk.title}
                   placeholder="blur"
-                  className="absolute inset-0 z-0"
+                  className="absolute inset-0 z-0 size-full"
                 />
                 <div
                   className="absolute z-10 min-h-[368px] w-full"
