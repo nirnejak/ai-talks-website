@@ -41,6 +41,7 @@ const TalksSection: React.FC = () => {
                   alt={talk.title}
                   placeholder="blur"
                   className="absolute inset-0 z-0 size-full"
+                  style={{ objectFit: "cover" }}
                 />
                 <div
                   className="absolute z-10 min-h-[368px] w-full"
