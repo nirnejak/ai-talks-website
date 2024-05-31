@@ -1,6 +1,7 @@
+"use client"
 import * as React from "react"
 
-import useWindowSize from "@/hooks/useWindowSize"
+import useBackground from "@/hooks/useBackground"
 import classNames from "@/utils/classNames"
 
 interface Props {
@@ -16,29 +17,7 @@ const Tabs: React.FC<Props> = ({
   setActiveTab,
   className,
 }) => {
-  const size = useWindowSize()
-
-  const wrapperRef = React.useRef<HTMLDivElement | null>(null)
-
-  const [highlightStyles, setHighlightStyles] =
-    React.useState<React.CSSProperties>({ opacity: 0 })
-
-  React.useEffect(() => {
-    if (wrapperRef?.current !== null) {
-      const elements = wrapperRef.current?.getElementsByTagName("button")
-
-      if (elements?.length !== 0) {
-        const dimensions = elements[activeTab].getBoundingClientRect()
-        const wrapperDimensions = wrapperRef.current.getBoundingClientRect()
-
-        setHighlightStyles({
-          opacity: 1,
-          width: `${dimensions.width}px`,
-          transform: `translate(${dimensions.left - wrapperDimensions.left}px)`,
-        })
-      }
-    }
-  }, [activeTab, size])
+  const { wrapperRef, highlightStyles } = useBackground(activeTab)
 
   return (
     <nav

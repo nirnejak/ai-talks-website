@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
   }
 
   return (
-    <header className="relative bg-cover bg-no-repeat py-[88px] text-white">
+    <header className="relative py-[88px] text-white">
       <Image
         src={HeroImage}
         alt="Hero Image"
