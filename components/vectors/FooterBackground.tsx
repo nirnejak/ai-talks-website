@@ -2,13 +2,7 @@ import * as React from "react"
 
 const FooterBackground: React.FC = () => {
   return (
-    <svg
-      // width="1408"
-      // height="492"
-      viewBox="0 0 1408 492"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 1408 492" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M1.06602 446.677C1.65477 446.677 2.13204 447.121 2.13204 447.669C2.13204 448.217 1.65477 448.661 1.06602 448.661C0.477273 448.661 0 448.217 0 447.669C0 447.121 0.477273 446.677 1.06602 446.677Z"
         fill="url(#paint0_radial_9_1340)"

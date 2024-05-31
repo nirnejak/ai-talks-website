@@ -88,8 +88,7 @@ const TalksSection: React.FC = () => {
                   src={talk.imageUrl}
                   alt={talk.title}
                   placeholder="blur"
-                  className="absolute inset-0 z-0 size-full"
-                  style={{ objectFit: "cover" }}
+                  className="absolute inset-0 z-0 size-full object-cover"
                 />
                 <div
                   className="absolute z-10 size-full"
