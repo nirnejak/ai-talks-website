@@ -1,7 +1,6 @@
 import * as React from "react"
 
-import { useWindowSize } from "@uidotdev/usehooks"
-
+import useWindowSize from "@/hooks/useWindowSize"
 import classNames from "@/utils/classNames"
 
 interface Props {
