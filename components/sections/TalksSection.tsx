@@ -35,7 +35,7 @@ const TalksSection: React.FC = () => {
         <div className="mb-10 grid grid-cols-1 gap-10 md:grid-cols-3">
           {filteredTalks.map((talk, index) => (
             <div key={index}>
-              <div className="relative mb-6 flex aspect-square max-h-[368px] w-full cursor-pointer overflow-hidden rounded-xl">
+              <div className="relative mb-6 flex aspect-square w-full cursor-pointer overflow-hidden rounded-xl">
                 <Image
                   src={talk.imageUrl}
                   alt={talk.title}
@@ -44,7 +44,7 @@ const TalksSection: React.FC = () => {
                   style={{ objectFit: "cover" }}
                 />
                 <div
-                  className="absolute z-10 min-h-[368px] w-full"
+                  className="absolute z-10 size-full"
                   style={{
                     background: `radial-gradient(100% 100% at 0% 0%, #180020 0%, rgba(26, 0, 35, 20%) 100%)`,
                   }}
