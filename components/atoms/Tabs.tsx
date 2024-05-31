@@ -1,5 +1,7 @@
 import * as React from "react"
 
+import { useWindowSize } from "@uidotdev/usehooks"
+
 import classNames from "@/utils/classNames"
 
 interface Props {
@@ -15,7 +17,8 @@ const Tabs: React.FC<Props> = ({
   setActiveTab,
   className,
 }) => {
-  const highlightRef = React.useRef<HTMLDivElement | null>(null)
+  const size = useWindowSize()
+
   const wrapperRef = React.useRef<HTMLDivElement | null>(null)
 
   const [highlightStyles, setHighlightStyles] =
@@ -26,19 +29,17 @@ const Tabs: React.FC<Props> = ({
       const elements = wrapperRef.current?.getElementsByTagName("button")
 
       if (elements?.length !== 0) {
-        const activeTabElement = elements[activeTab]
-        const dimensions = activeTabElement.getBoundingClientRect()
+        const dimensions = elements[activeTab].getBoundingClientRect()
         const wrapperDimensions = wrapperRef.current.getBoundingClientRect()
 
         setHighlightStyles({
           opacity: 1,
-          transitionDuration: "150ms",
           width: `${dimensions.width}px`,
           transform: `translate(${dimensions.left - wrapperDimensions.left}px)`,
         })
       }
     }
-  }, [activeTab])
+  }, [activeTab, size])
 
   return (
     <nav
@@ -46,9 +47,8 @@ const Tabs: React.FC<Props> = ({
       ref={wrapperRef}
     >
       <div
-        className="absolute left-0 h-full rounded-full border border-purple-200 bg-purple-200 transition-all"
-        ref={highlightRef}
         style={highlightStyles}
+        className="absolute left-0 h-full rounded-full border border-purple-200 bg-purple-200 transition-all"
       />
       {tabsOptions.map((tab, index) => (
         <button
