@@ -108,7 +108,7 @@ const config: Config = {
     screens: {
       sm: "640px",
       md: "768px",
-      lg: "1184px",
+      lg: "1216px",
     },
     fontFamily: {
       sans: ["var(--sans-font)"],
