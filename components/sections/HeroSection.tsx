@@ -21,33 +21,35 @@ const HeroSection: React.FC = () => {
         src={HeroImage}
         alt="Hero Image"
         placeholder="blur"
-        className="absolute inset-0 z-0 w-full"
+        className="absolute inset-0 z-0 size-full"
       />
       <Container className="relative z-10">
         <div className="max-w-[470px]">
-          <h1 className="mb-8 font-heading text-6xl font-semibold">
+          <h1 className="mb-8 font-heading text-5xl font-semibold md:text-6xl">
             Top insights from AI talks
           </h1>
           <p className="mb-10 text-xl tracking-tight">
             Get informed about the latest talks in artificial intelligence, all
             from the comfort of your front room
           </p>
-          <div className="flex gap-3">
+          <div className="flex flex-col gap-3 md:flex-row">
             <Link href="/app/">
               <Button variant="primary" iconRight={<ArrowRight />}>
                 Get the app
               </Button>
             </Link>
-            <Button
-              variant="light"
-              isOutline
-              iconRight={<ArrowRight />}
-              onClick={() => {
-                scrollToFooter()
-              }}
-            >
-              Join a talk
-            </Button>
+            <div>
+              <Button
+                variant="light"
+                isOutline
+                iconRight={<ArrowRight />}
+                onClick={() => {
+                  scrollToFooter()
+                }}
+              >
+                Join a talk
+              </Button>
+            </div>
           </div>
         </div>
       </Container>
