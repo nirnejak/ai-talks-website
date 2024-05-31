@@ -3,8 +3,8 @@ import * as React from "react"
 const FooterBackground: React.FC = () => {
   return (
     <svg
-      width="1408"
-      height="492"
+      // width="1408"
+      // height="492"
       viewBox="0 0 1408 492"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
