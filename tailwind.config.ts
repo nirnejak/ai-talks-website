@@ -105,6 +105,11 @@ const config: Config = {
         "rotate-reverse": "rotate-reverse 15s linear infinite",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1184px",
+    },
     fontFamily: {
       sans: ["var(--sans-font)"],
       heading: ["var(--font-clash-display)"],
