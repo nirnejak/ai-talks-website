@@ -69,7 +69,7 @@ const Tabs: React.FC<Props> = ({
       ref={wrapperRef}
     >
       <div
-        className="absolute left-0 h-full rounded-full bg-purple-200"
+        className="absolute left-0 h-full rounded-full border border-purple-200 bg-purple-200"
         ref={highlightRef}
         style={{
           transition: "0.15s ease",
@@ -81,7 +81,7 @@ const Tabs: React.FC<Props> = ({
         <button
           key={index}
           className={
-            "relative inline-block rounded-full px-5 py-2 font-semibold text-slate-900 outline-none"
+            "relative inline-block rounded-full border border-transparent px-3 py-1.5 text-sm font-semibold text-slate-900 outline-none hover:border-purple-100 focus:border-purple-100 md:px-5 md:py-2 md:text-base"
           }
           onClick={(ev: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
             repositionHighlight(ev, tab, index)
