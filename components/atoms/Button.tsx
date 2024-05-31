@@ -24,7 +24,7 @@ const Button: React.FC<Props> = ({
     switch (variant) {
       case "primary":
         if (isOutline) {
-          return "border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white focus:bg-purple-500 focu:text-white"
+          return "border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white focus:bg-purple-500 focus:text-white"
         } else {
           return "border-purple-500 text-white bg-purple-500 hover:bg-purple-600 hover:border-purple-600 focus:bg-purple-600 focus:border-purple-600"
         }

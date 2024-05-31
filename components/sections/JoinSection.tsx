@@ -12,7 +12,7 @@ const JoinSection: React.FC = () => {
     <section className="py-20">
       <Container className="grid items-center gap-10 md:grid-cols-2">
         <AnimatedComponent />
-        <div className="order-1 flex md:order-2">
+        <div className="flex">
           <div className="max-w-[470px] md:ml-auto">
             <h2 className="mb-6 font-heading text-4xl font-semibold text-slate-900 lg:text-5xl">
               Become a member

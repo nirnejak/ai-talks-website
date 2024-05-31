@@ -35,7 +35,7 @@ const TalksSection: React.FC = () => {
         <div className="mb-10 grid grid-cols-1 gap-10 md:grid-cols-3">
           {filteredTalks.map((talk, index) => (
             <div key={index}>
-              <div className="relative mb-6 flex min-h-[368px] cursor-pointer overflow-hidden rounded-xl">
+              <div className="relative mb-6 flex aspect-square max-h-[368px] w-full cursor-pointer overflow-hidden rounded-xl">
                 <Image
                   src={talk.imageUrl}
                   alt={talk.title}
@@ -51,14 +51,14 @@ const TalksSection: React.FC = () => {
                 />
                 <div className="relative z-20 mt-auto p-6">
                   <h3
-                    className="line-clamp-3 font-heading text-2xl font-semibold leading-7 text-slate-50"
+                    className="line-clamp-3 font-heading text-xl font-semibold leading-7 text-slate-50 lg:text-2xl"
                     style={{ textShadow: "0px 4px 4px #00000080" }}
                   >
                     {talk.title}
                   </h3>
                 </div>
               </div>
-              <p className="line-clamp-4 text-base tracking-tight">
+              <p className="line-clamp-4 text-sm tracking-tight md:text-base">
                 {talk.subtitle}
               </p>
             </div>
