@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 
-import useBackground from "@/hooks/useBackground"
+import useLinkHighlight from "@/hooks/useLinkHighlight"
 import classNames from "@/utils/classNames"
 
 interface Props {
@@ -17,7 +17,7 @@ const Tabs: React.FC<Props> = ({
   setActiveTab,
   className,
 }) => {
-  const { wrapperRef, highlightStyles } = useBackground(activeTab)
+  const { wrapperRef, highlightStyles } = useLinkHighlight(activeTab)
 
   return (
     <nav

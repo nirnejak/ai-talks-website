@@ -2,12 +2,12 @@ import * as React from "react"
 
 import useWindowSize from "./useWindowSize"
 
-interface IHook {
+interface HighlightProperties {
   wrapperRef: React.LegacyRef<HTMLElement>
   highlightStyles: React.CSSProperties
 }
 
-const useBackground = (activeTab: number): IHook => {
+const useLinkHighlight = (activeTab: number): HighlightProperties => {
   const size = useWindowSize()
 
   const wrapperRef = React.useRef<HTMLDivElement | null>(null)
@@ -35,4 +35,4 @@ const useBackground = (activeTab: number): IHook => {
   return { wrapperRef, highlightStyles }
 }
 
-export default useBackground
+export default useLinkHighlight
