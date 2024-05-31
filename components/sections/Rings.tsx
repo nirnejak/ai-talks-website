@@ -1,0 +1,80 @@
+import * as React from "react"
+
+const Rings: React.FC = () => {
+  return (
+    <svg
+      width="473"
+      height="341"
+      viewBox="0 0 473 341"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="237"
+        cy="171"
+        r="42"
+        stroke="#FF00A8"
+        strokeOpacity="0.5"
+        strokeWidth="1.5"
+      />
+      <circle
+        cx="237"
+        cy="171"
+        r="78"
+        stroke="#FF00A8"
+        strokeOpacity="0.5"
+        strokeWidth="1.5"
+      />
+      <circle
+        cx="237"
+        cy="171"
+        r="108"
+        stroke="#FF00A8"
+        strokeOpacity="0.2"
+        strokeWidth="1.5"
+      />
+      <circle
+        cx="237"
+        cy="171"
+        r="138"
+        stroke="#FF00A8"
+        strokeOpacity="0.06"
+        strokeWidth="1.5"
+      />
+      <circle
+        cx="237"
+        cy="171"
+        r="168"
+        stroke="#FF00A8"
+        strokeOpacity="0.06"
+        strokeWidth="1.5"
+      />
+      <circle
+        cx="237"
+        cy="171"
+        r="198"
+        stroke="#FF00A8"
+        strokeOpacity="0.05"
+        strokeWidth="1.5"
+      />
+      <circle
+        cx="237"
+        cy="171"
+        r="228"
+        stroke="#FF00A8"
+        strokeOpacity="0.04"
+        strokeWidth="1.5"
+      />
+      <circle
+        cx="237"
+        cy="171"
+        r="258"
+        stroke="#FF00A8"
+        strokeOpacity="0.03"
+        strokeWidth="1.5"
+      />
+    </svg>
+  )
+}
+
+export default Rings
