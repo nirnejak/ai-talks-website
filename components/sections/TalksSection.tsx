@@ -1,6 +1,8 @@
 "use client"
 import * as React from "react"
+import { useInView } from "react-intersection-observer"
 
+import { motion, useAnimation } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -20,19 +22,65 @@ const TalksSection: React.FC = () => {
     return talks.filter((talk) => talk.city === city)
   }, [activeTab])
 
+  const controls = useAnimation()
+  const [refText, inViewText] = useInView()
+  const [refCards, inViewCards] = useInView()
+
+  React.useEffect(() => {
+    if (inViewText) {
+      controls.start("visible").catch((err) => {
+        console.log(err)
+      })
+    }
+  }, [controls, inViewText])
+
+  React.useEffect(() => {
+    if (inViewCards) {
+      controls.start("visible").catch((err) => {
+        console.log(err)
+      })
+    }
+  }, [controls, inViewCards])
+
+  const variants = {
+    hidden: { opacity: 0, translateY: 10 },
+    visible: { opacity: 1, translateY: 0 },
+  }
+
   return (
     <section className="py-20">
       <Container>
-        <h2 className="mb-8 font-heading text-4xl font-semibold">
+        <motion.h2
+          ref={refText}
+          initial={"hidden"}
+          animate={controls}
+          variants={variants}
+          transition={{ duration: 1, delay: 0.8, type: "spring" }}
+          className="mb-8 font-heading text-4xl font-semibold"
+        >
           Find more talks
-        </h2>
-        <Tabs
-          tabsOptions={cities}
-          activeTab={activeTab}
-          setActiveTab={setActiveTab}
-          className="mb-10"
-        />
-        <div className="mb-10 grid grid-cols-1 gap-10 md:grid-cols-3">
+        </motion.h2>
+        <motion.div
+          initial={"hidden"}
+          animate={controls}
+          variants={variants}
+          transition={{ duration: 1, delay: 0.8, type: "spring" }}
+        >
+          <Tabs
+            tabsOptions={cities}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+            className="mb-10"
+          />
+        </motion.div>
+        <motion.div
+          ref={refCards}
+          initial={"hidden"}
+          animate={controls}
+          variants={variants}
+          transition={{ duration: 1, delay: 1, type: "spring" }}
+          className="mb-10 grid grid-cols-1 gap-10 md:grid-cols-3"
+        >
           {filteredTalks.map((talk, index) => (
             <div key={index}>
               <div className="relative mb-6 flex aspect-square w-full cursor-pointer overflow-hidden rounded-xl">
@@ -63,12 +111,19 @@ const TalksSection: React.FC = () => {
               </p>
             </div>
           ))}
-        </div>
-        <Link href="/app/">
-          <Button variant="dark" isOutline iconRight={<ArrowRight />}>
-            Listen to more
-          </Button>
-        </Link>
+        </motion.div>
+        <motion.div
+          initial={"hidden"}
+          animate={controls}
+          variants={variants}
+          transition={{ duration: 1, delay: 1, type: "spring" }}
+        >
+          <Link href="/app/">
+            <Button variant="dark" isOutline iconRight={<ArrowRight />}>
+              Listen to more
+            </Button>
+          </Link>
+        </motion.div>
       </Container>
     </section>
   )
