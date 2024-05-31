@@ -10,16 +10,14 @@ import ArrowRight from "../vectors/ArrowRight"
 const JoinSection: React.FC = () => {
   return (
     <section className="py-20">
-      <Container className="grid grid-cols-2 items-center gap-10">
-        <div className="relative overflow-hidden rounded-3xl">
-          <AnimatedComponent />
-        </div>
+      <Container className="grid items-center gap-10 md:grid-cols-2">
+        <AnimatedComponent />
         <div>
-          <div className="ml-[102px] max-w-[470px]">
-            <h2 className="mb-6 font-heading text-5xl font-semibold text-slate-900">
+          <div className="ml-4 max-w-[470px] md:ml-auto">
+            <h2 className="mb-6 font-heading text-4xl font-semibold text-slate-900 lg:text-5xl">
               Become a member
             </h2>
-            <p className="mb-10 text-xl tracking-tight text-slate-900">
+            <p className="mb-10 text-lg tracking-tight text-slate-900 lg:text-xl">
               Join our AI Talk platform for exclusive insights on AI{"'"}s
               impact. Unlock membership for a deeper dive into the world of
               artificial intelligence.
