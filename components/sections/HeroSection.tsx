@@ -28,11 +28,11 @@ const HeroSection: React.FC = () => {
           <h1 className="mb-8 font-heading text-5xl font-semibold md:text-6xl">
             Top insights from AI talks
           </h1>
-          <p className="mb-10 text-xl tracking-tight">
+          <p className="mb-10 text-lg tracking-tight md:text-xl">
             Get informed about the latest talks in artificial intelligence, all
             from the comfort of your front room
           </p>
-          <div className="flex flex-col gap-3 md:flex-row">
+          <div className="flex gap-3 sm:flex-row">
             <Link href="/app/">
               <Button variant="primary" iconRight={<ArrowRight />}>
                 Get the app

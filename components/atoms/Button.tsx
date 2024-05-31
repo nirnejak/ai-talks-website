@@ -46,7 +46,7 @@ const Button: React.FC<Props> = ({
   return (
     <button
       className={classNames(
-        "rounded-full px-9 py-2.5 font-semibold text-base flex items-center gap-2 border-2 transition-all active:scale-95 focus:outline-none",
+        "rounded-full px-7 md:px-9 py-1.5 md:py-2.5 font-semibold text-sm md:text-base flex items-center gap-2 border-2 transition-all active:scale-95 focus:outline-none",
         buttonClass,
         className
       )}
